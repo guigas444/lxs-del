@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Índice — Consultoria de SEO</title>
+<meta name="description" content="Consultoria de SEO focada em rastreamento, indexação e classificação. Ajudamos empresas a serem encontradas nos motores de busca.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="#topo">Índice</a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Processo</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#contato" class="btn btn-primary nav-cta">Pedir diagnóstico</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Abrir menu</span>
+    </button>
+  </div>
+</header>
+
+<main id="topo">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Todo site tem uma ficha.<br>A pergunta é em qual gaveta ela fica.</h1>
+        <p class="hero-sub">Trabalhamos o rastreamento, a indexação e a classificação do seu site para que ele apareça — de verdade — para quem já está procurando o que você oferece.</p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary">Pedir diagnóstico gratuito</a>
+          <a href="#servicos" class="btn btn-ghost">Ver serviços</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="card-stack">
+          <div class="card card-back"></div>
+          <div class="card card-mid"></div>
+          <div class="card card-front">
+            <div class="card-row"><span class="card-key">site</span><span class="card-val">seusite.com.br</span></div>
+            <div class="card-row"><span class="card-key">status</span><span class="card-val">indexado</span></div>
+            <div class="card-row"><span class="card-key">posição</span><span class="card-val">3ª página → 1ª página</span></div>
+            <div class="card-row"><span class="card-key">atualizado</span><span class="card-val">hoje</span></div>
+            <div class="stamp">revisado</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="explainer" id="como-funciona">
+    <div class="section-inner">
+      <h2>Como os motores de busca catalogam a internet</h2>
+
+      <div class="tabs" role="tablist" aria-label="Etapas da busca">
+        <button class="tab-btn is-active" role="tab" aria-selected="true" aria-controls="painel-rastreamento" id="tab-rastreamento" data-tab="rastreamento">Rastreamento</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="painel-indexacao" id="tab-indexacao" data-tab="indexacao">Indexação</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="painel-classificacao" id="tab-classificacao" data-tab="classificacao">Classificação</button>
+      </div>
+
+      <div class="tab-panels">
+        <div class="tab-panel is-active" id="painel-rastreamento" role="tabpanel" aria-labelledby="tab-rastreamento">
+          <p>Robôs de busca (crawlers) visitam seu site e seguem cada link que encontram — como alguém percorrendo os corredores de uma biblioteca, anotando o que existe em cada estante. Uma página sem nenhum link apontando para ela é, para esse robô, uma página que não existe.</p>
+        </div>
+        <div class="tab-panel" id="painel-indexacao" role="tabpanel" aria-labelledby="tab-indexacao" hidden>
+          <p>O que foi rastreado é analisado e guardado em um banco de dados gigantesco: o índice. É a gaveta onde a ficha do seu site fica arquivada, pronta para ser puxada assim que alguém pesquisar por um assunto relacionado.</p>
+        </div>
+        <div class="tab-panel" id="painel-classificacao" role="tabpanel" aria-labelledby="tab-classificacao" hidden>
+          <p>Na hora da busca, o motor de busca decide, entre milhões de fichas, quais mostrar primeiro — e em qual ordem. Relevância, autoridade e experiência de uso definem quem sobe na gaveta. É aí que entra o nosso trabalho.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicos">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Serviços</h2>
+        <div class="search-field">
+          <label for="serviceSearch" class="sr-only">Buscar serviço</label>
+          <input type="search" id="serviceSearch" placeholder="Buscar por palavra-chave, ex. conteúdo, links, local...">
+        </div>
+      </div>
+
+      <div class="card-grid" id="serviceGrid">
+
+        <article class="index-card" data-keywords="auditoria técnica velocidade rastreamento sitemap erros">
+          <span class="tab-flag" style="--tab-color: var(--accent-stamp);">aud</span>
+          <h3>Auditoria técnica de SEO</h3>
+          <p>Encontramos o que impede seu site de ser rastreado e indexado corretamente.</p>
+          <ul>
+            <li>Velocidade de carregamento</li>
+            <li>Estrutura de URLs e sitemap</li>
+            <li>Erros de rastreamento</li>
+          </ul>
+        </article>
+
+        <article class="index-card" data-keywords="on-page titulos meta descricao hierarquia conteudo palavras-chave">
+          <span class="tab-flag" style="--tab-color: var(--accent-tab);">on-p</span>
+          <h3>Otimização on-page</h3>
+          <p>Ajustamos títulos, textos e estrutura para que cada página responda à pergunta certa.</p>
+          <ul>
+            <li>Palavra-chave principal por página</li>
+            <li>Meta títulos e descrições</li>
+            <li>Hierarquia de conteúdo (H1–H6)</li>
+          </ul>
+        </article>
+
+        <article class="index-card" data-keywords="conteudo estrategico artigos pauta editorial intencao de busca">
+          <span class="tab-flag" style="--tab-color: var(--accent-stamp);">cont</span>
+          <h3>Conteúdo estratégico</h3>
+          <p>Criamos páginas e artigos que respondem ao que as pessoas realmente buscam.</p>
+          <ul>
+            <li>Pesquisa de intenção de busca</li>
+            <li>Pauta editorial mensal</li>
+            <li>Otimização de conteúdo existente</li>
+          </ul>
+        </article>
+
+        <article class="index-card" data-keywords="links autoridade parcerias citacoes concorrentes backlinks">
+          <span class="tab-flag" style="--tab-color: var(--accent-tab);">link</span>
+          <h3>Construção de autoridade</h3>
+          <p>Conquistamos menções e links de sites relevantes para o seu setor.</p>
+          <ul>
+            <li>Parcerias e citações</li>
+            <li>Análise de concorrentes</li>
+            <li>Remoção de links tóxicos</li>
+          </ul>
+        </article>
+
+        <article class="index-card" data-keywords="local mapa google empresa avaliacoes regiao endereco">
+          <span class="tab-flag" style="--tab-color: var(--accent-stamp);">loc</span>
+          <h3>SEO local</h3>
+          <p>Colocamos seu negócio no mapa — literalmente — para buscas por região.</p>
+          <ul>
+            <li>Perfil da Empresa no Google</li>
+            <li>Consistência de nome, endereço e telefone</li>
+            <li>Avaliações e reputação local</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <p class="no-results" id="noResults" hidden>Nenhum serviço encontrado para essa busca.</p>
+    </div>
+  </section>
+
+  <section class="process" id="processo">
+    <div class="section-inner">
+      <h2>Como trabalhamos</h2>
+      <ol class="process-list">
+        <li>
+          <span class="step-num">1</span>
+          <div>
+            <h3>Diagnóstico</h3>
+            <p>Auditamos o site inteiro e mapeamos o que está travando o crescimento.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <div>
+            <h3>Plano</h3>
+            <p>Priorizamos as mudanças pelo impacto esperado, não pela facilidade de implementar.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <div>
+            <h3>Execução</h3>
+            <p>Implementamos ajustes técnicos, conteúdo e autoridade em ciclos mensais.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <div>
+            <h3>Acompanhamento</h3>
+            <p>Medimos posição, tráfego e conversão — e ajustamos o plano com dados reais.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="stats" id="resultados">
+    <div class="section-inner">
+      <h2>O que muda na prática</h2>
+      <div class="stat-grid">
+        <div class="stat-stamp">
+          <span class="stat-number">+186%</span>
+          <span class="stat-label">tráfego orgânico médio em 6 meses</span>
+        </div>
+        <div class="stat-stamp stat-stamp--tilt">
+          <span class="stat-number">73%</span>
+          <span class="stat-label">dos clientes chegam à 1ª página em até 90 dias</span>
+        </div>
+        <div class="stat-stamp">
+          <span class="stat-number">40+</span>
+          <span class="stat-label">setores diferentes atendidos até hoje</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <div class="section-inner">
+      <blockquote>
+        <p>Antes, nosso site existia — mas ninguém achava. Em quatro meses, passamos a aparecer na primeira página para as buscas que realmente importavam para o nosso negócio.</p>
+        <footer>Beatriz, sócia de um e-commerce de decoração</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="contact" id="contato">
+    <div class="section-inner contact-inner">
+      <div class="contact-text">
+        <h2>Vamos ver o que está travando o seu site?</h2>
+        <p>Preencha os dados abaixo. Respondemos com um diagnóstico inicial em até um dia útil.</p>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <label>
+          <span>Nome</span>
+          <input type="text" name="nome" required>
+        </label>
+        <label>
+          <span>Site</span>
+          <input type="text" name="site" placeholder="seusite.com.br" required>
+        </label>
+        <label>
+          <span>E-mail</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Mensagem</span>
+          <textarea name="mensagem" rows="3" placeholder="Conte um pouco sobre o seu site e o que já tentou até agora."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Enviar para análise</button>
+        <p class="form-status" id="formStatus" role="status" hidden></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <span class="footer-brand">Índice</span>
+    <nav class="footer-nav">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <span class="footer-copy">© 2026 Índice — Consultoria de SEO.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
